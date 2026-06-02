@@ -3,6 +3,10 @@ name: 🚀 G4F 自动续期
 on:
   workflow_dispatch: # 允许你在 GitHub 页面上点击按钮手动触发测试
 
+permissions:
+  actions: write
+  contents: read
+
 jobs:
   renew_job:
     runs-on: ubuntu-latest
